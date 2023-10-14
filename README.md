@@ -9,7 +9,7 @@ Do **not** install example custom config.
 2. Clone this repository as `custom` subdir of NvChad's `lua` directory.
 
 ```sh
-$ cd ~/.config/nvim
+$ cd ~/.config/nvim/lua
 $ git clone https://github.com/phpeek/NvChad-config.git custom
 ```
 
