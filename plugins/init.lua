@@ -8,6 +8,14 @@ local plugins = {
   {
     "tpope/vim-fugitive", cmd = "Git"
   },
+
+  -- treesitter
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = function ()
+      return require "custom.plugins.configs.treesitter"
+    end
+  }
 }
 
 return plugins
