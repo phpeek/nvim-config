@@ -15,7 +15,24 @@ local plugins = {
     opts = function ()
       return require "custom.plugins.configs.treesitter"
     end
-  }
+  },
+
+  -- mason
+  {
+    "williamboman/mason.nvim",
+    opts = function ()
+      return require "custom.plugins.configs.mason"
+    end
+  },
+
+  -- lspconfig
+  {
+    "neovim/nvim-lspconfig",
+    config = function ()
+      require "plugins.configs.lspconfig"
+      require "custom.plugins.configs.lspconfig"
+    end
+  },
 }
 
 return plugins
