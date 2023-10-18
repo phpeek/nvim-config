@@ -5,7 +5,7 @@ local M = {}
 M.mappings = require "custom.mappings"
 
 -- set theme
-M.ui = { theme = 'tokyonight' }
+M.ui = { theme = "tokyonight" }
 
 -- load plugins
 M.plugins = "custom.plugins.init"

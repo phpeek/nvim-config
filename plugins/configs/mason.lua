@@ -6,7 +6,7 @@ local options = {
     -- go
     "gopls",
 
-    -- docker 
+    -- docker
     "dockerfile-language-server",
 
     -- css
@@ -25,7 +25,7 @@ local options = {
     "stylua",
     "goimports",
     "prettier",
-  }
+  },
 }
 
 return options

@@ -6,7 +6,7 @@ opt.relativenumber = true
 -- do not wrap long lines
 opt.wrap = false
 
--- disable swap files 
+-- disable swap files
 opt.swapfile = false
 
 -- disable backup file
