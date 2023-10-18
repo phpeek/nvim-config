@@ -35,6 +35,9 @@ local options = {
     "yaml",
   },
 
+  -- do not auto install parsers
+  auto_install = false,
+
   incremental_selection = {
     enable = true,
     keymaps = {
