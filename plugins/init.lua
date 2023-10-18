@@ -1,12 +1,14 @@
 local plugins = {
   -- vim learning
   {
-    "ThePrimeagen/vim-be-good", cmd = "VimBeGood"
+    "ThePrimeagen/vim-be-good",
+    cmd = "VimBeGood",
   },
 
   -- git intergration
   {
-    "tpope/vim-fugitive", cmd = "Git"
+    "tpope/vim-fugitive",
+    cmd = "Git",
   },
 
   -- treesitter
@@ -15,26 +17,36 @@ local plugins = {
     dependencies = {
       "nvim-treesitter/nvim-treesitter-textobjects",
     },
-    opts = function ()
+    opts = function()
       return require "custom.plugins.configs.treesitter"
-    end
+    end,
   },
 
   -- mason
   {
     "williamboman/mason.nvim",
-    opts = function ()
+    opts = function()
       return require "custom.plugins.configs.mason"
-    end
+    end,
   },
 
   -- lspconfig
   {
     "neovim/nvim-lspconfig",
-    config = function ()
+    config = function()
       require "plugins.configs.lspconfig"
       require "custom.plugins.configs.lspconfig"
-    end
+    end,
+  },
+
+  --- conform
+  {
+    "stevearc/conform.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    cmd = { "ConformInfo" },
+    config = function()
+      require "custom.plugins.configs.conform"
+    end,
   },
 }
 

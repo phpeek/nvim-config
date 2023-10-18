@@ -4,13 +4,37 @@ M.disabled = {
   n = {
     ["<leader>n"] = "",
     ["<leader>rn"] = "",
-  }
+  },
 }
 
 M.general = {
   i = {
-    ['kk'] = { "<esc>", "escape insert mode", opts = { nowait = true }},
-  }
+    ["kk"] = { "<esc>", "escape insert mode", opts = { nowait = true } },
+  },
+  n = {
+    ["<leader>fm"] = {
+      function()
+        require("conform").format {
+          lsp_fallback = true,
+          async = true,
+          timeout_ms = 500,
+        }
+      end,
+      "Conform / LSP formating",
+    },
+  },
+  v = {
+    ["<leader>fm"] = {
+      function()
+        require("conform").format {
+          lsp_fallback = true,
+          async = true,
+          timeout_ms = 500,
+        }
+      end,
+      "Conform / LSP formating",
+    },
+  },
 }
 
 M.lspconfig = {

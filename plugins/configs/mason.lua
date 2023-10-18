@@ -20,6 +20,11 @@ local options = {
 
     -- helm
     "helm-ls",
+
+    -- formatters
+    "stylua",
+    "goimports",
+    "prettier",
   }
 }
 
