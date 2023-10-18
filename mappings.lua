@@ -13,4 +13,27 @@ M.general = {
   }
 }
 
+M.lspconfig = {
+  n = {
+    ["gd"] = {
+      function ()
+        require("telescope.builtin").lsp_definitions()
+      end,
+      "LSP definitions",
+    },
+    ["gr"] = {
+      function ()
+        require("telescope.builtin").lsp_references()
+      end,
+      "LSP references",
+    },
+    ["gi"] = {
+      function ()
+        require("telescope.builtin").lsp_implementations()
+      end,
+      "LSP implementations",
+    },
+  }
+}
+
 return M
