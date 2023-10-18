@@ -12,6 +12,9 @@ local plugins = {
   -- treesitter
   {
     "nvim-treesitter/nvim-treesitter",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter-textobjects",
+    },
     opts = function ()
       return require "custom.plugins.configs.treesitter"
     end
