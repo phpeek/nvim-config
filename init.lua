@@ -23,3 +23,6 @@ opt.incsearch = true
 
 -- highlight column at 80th character
 opt.colorcolumn = "80"
+
+-- disable space in normal and visual mode
+vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
