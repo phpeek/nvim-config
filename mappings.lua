@@ -5,6 +5,8 @@ M.disabled = {
     ["<leader>n"] = "",
     ["<leader>rn"] = "",
     ["<leader>ra"] = "",
+    ["<leader>ff"] = "",
+    ["<leader>fa"] = "",
   },
 }
 
@@ -49,6 +51,14 @@ M.lspconfig = {
       end,
       "LSP rename",
     },
+  },
+}
+
+M.telescope = {
+  n = {
+    ["<C-p>"] = { "<cmd> Telescope git_files <CR>", "Find project files" },
+    ["<leader>fs"] = { "<cmd> Telescope find_files follow=true no_ignore=true hidden=true <CR>", "Find all files" },
+    ["<leader>hs"] = { "<cmd> Telescope help_tags <CR>", "Search help" },
   },
 }
 
