@@ -4,6 +4,7 @@ M.disabled = {
   n = {
     ["<leader>n"] = "",
     ["<leader>rn"] = "",
+    ["<leader>ra"] = "",
   },
 }
 
@@ -42,6 +43,12 @@ M.lspconfig = {
     ["gd"] = { "<cmd> Telescope lsp_definitions <CR>", "LSP definition" },
     ["gr"] = { "<cmd> Telescope lsp_references <CR>", "LSP reference" },
     ["gi"] = { "<cmd> Telescope lsp_implementations <CR>", "LSP implementation" },
+    ["<leader>rn"] = {
+      function()
+        require("nvchad.renamer").open()
+      end,
+      "LSP rename",
+    },
   },
 }
 
