@@ -25,6 +25,7 @@ M.general = {
       end,
       "Conform / LSP formating",
     },
+    ["<leader>d"] = { [["_d]], "delete with void register" },
   },
   v = {
     ["<leader>fm"] = {
@@ -37,6 +38,7 @@ M.general = {
       end,
       "Conform / LSP formating",
     },
+    ["<leader>d"] = { [["_d]], "delete with void register" },
   },
 }
 
