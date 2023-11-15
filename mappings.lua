@@ -12,7 +12,7 @@ M.disabled = {
 
 M.general = {
   i = {
-    ["kk"] = { "<esc>", "escape insert mode", opts = { nowait = true } },
+    ["jk"] = { "<esc>", "escape insert mode", opts = { nowait = true } },
   },
   n = {
     ["<leader>fm"] = {
