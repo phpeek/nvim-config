@@ -18,7 +18,10 @@ local plugins = {
       "nvim-treesitter/nvim-treesitter-textobjects",
     },
     opts = function()
-      return require "custom.plugins.configs.treesitter"
+      local base = require "plugins.configs.treesitter"
+      local overwrite = require "custom.plugins.configs.treesitter"
+
+      return vim.tbl_deep_extend("force", base, overwrite)
     end,
   },
 
