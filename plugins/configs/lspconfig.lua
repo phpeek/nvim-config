@@ -11,6 +11,7 @@ local servers = {
   "jsonls",
   "yamlls",
   "helm_ls",
+  "tsserver",
 }
 
 for _, lsp in ipairs(servers) do

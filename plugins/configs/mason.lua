@@ -18,6 +18,9 @@ local options = {
     -- yaml
     "yaml-language-server",
 
+    -- typescript
+    "typescript-language-server",
+
     -- helm
     "helm-ls",
 
