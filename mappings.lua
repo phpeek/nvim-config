@@ -5,8 +5,6 @@ M.disabled = {
     ["<leader>n"] = "",
     ["<leader>rn"] = "",
     ["<leader>ra"] = "",
-    ["<leader>ff"] = "",
-    ["<leader>fa"] = "",
   },
 }
 
@@ -59,7 +57,6 @@ M.lspconfig = {
 M.telescope = {
   n = {
     ["<C-p>"] = { "<cmd> Telescope git_files <CR>", "Find project files" },
-    ["<leader>fs"] = { "<cmd> Telescope find_files", "Search files" },
     ["<leader>hs"] = { "<cmd> Telescope help_tags <CR>", "Search help" },
   },
 }
