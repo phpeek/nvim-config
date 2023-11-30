@@ -51,6 +51,17 @@ local plugins = {
       require "custom.plugins.configs.conform"
     end,
   },
+
+  --- telescope
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = function()
+      local core = require "plugins.configs.telescope"
+      local custom = require "custom.plugins.configs.telescope"
+
+      return vim.tbl_deep_extend("force", core, custom)
+    end,
+  },
 }
 
 return plugins
