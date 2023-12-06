@@ -62,6 +62,18 @@ local plugins = {
       return vim.tbl_deep_extend("force", core, custom)
     end,
   },
+
+  -- rest.nvim
+  {
+    "rest-nvim/rest.nvim",
+    dependencies = { { "nvim-lua/plenary.nvim" } },
+    cmd = { "RestNvim", "RestNvimPreview", "RestNvimLast" },
+    config = function()
+      require("rest-nvim").setup {
+        --- Get the same options from Packer setup
+      }
+    end,
+  },
 }
 
 return plugins
