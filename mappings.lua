@@ -58,6 +58,8 @@ M.telescope = {
   n = {
     ["<C-p>"] = { "<cmd> Telescope git_files <CR>", "Find project files" },
     ["<leader>hs"] = { "<cmd> Telescope help_tags <CR>", "Search help" },
+    ["<leader>fs"] = { "<cmd> Telescope lsp_document_symbols <CR>", "Find symbols" },
+    ["<leader>fk"] = { "<cmd> Telescope keymaps <CR>", "Find keymap" },
   },
 }
 
