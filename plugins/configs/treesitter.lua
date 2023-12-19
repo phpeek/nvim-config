@@ -33,6 +33,9 @@ local options = {
 
     -- yaml,
     "yaml",
+
+    -- http
+    "http",
   },
 
   -- do not auto install parsers

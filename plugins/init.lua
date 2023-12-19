@@ -67,11 +67,9 @@ local plugins = {
   {
     "rest-nvim/rest.nvim",
     dependencies = { { "nvim-lua/plenary.nvim" } },
-    cmd = { "RestNvim", "RestNvimPreview", "RestNvimLast" },
+    event = "VeryLazy",
     config = function()
-      require("rest-nvim").setup {
-        --- Get the same options from Packer setup
-      }
+      require "custom.plugins.configs.rest-nvim"
     end,
   },
 }

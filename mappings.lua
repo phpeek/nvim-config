@@ -63,4 +63,21 @@ M.telescope = {
   },
 }
 
+M.rest = {
+  n = {
+    ["<leader>rr"] = {
+      "<Plug>RestNvim",
+      "Run request under the cursor",
+    },
+    ["<leader>rp"] = {
+      "<Plug>RestNvimPreview",
+      "Preview the request under the cursor",
+    },
+    ["<leader>rl"] = {
+      "<Plug>RestNvimLast",
+      "Re-run the last request",
+    },
+  },
+}
+
 return M
