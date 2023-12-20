@@ -29,7 +29,10 @@ local plugins = {
   {
     "williamboman/mason.nvim",
     opts = function()
-      return require "custom.plugins.configs.mason"
+      local core = require "plugins.configs.mason"
+      local custom = require "custom.plugins.configs.mason"
+
+      return vim.tbl_deep_extend("force", core, custom)
     end,
   },
 
