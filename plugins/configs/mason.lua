@@ -24,10 +24,14 @@ local options = {
     -- helm
     "helm-ls",
 
+    -- eslint lsp
+    "eslint-lsp",
+
     -- formatters
     "stylua",
     "goimports",
     "prettier",
+    "eslint_d",
   },
 }
 

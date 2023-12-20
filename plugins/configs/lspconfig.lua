@@ -12,6 +12,7 @@ local servers = {
   "yamlls",
   "helm_ls",
   "tsserver",
+  "eslint",
 }
 
 for _, lsp in ipairs(servers) do
