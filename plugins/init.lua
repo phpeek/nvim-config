@@ -75,6 +75,17 @@ local plugins = {
       require "custom.plugins.configs.rest-nvim"
     end,
   },
+
+  -- nvim-tree
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = function()
+      local core = require "plugins.configs.nvimtree"
+      local custom = require "custom.plugins.configs.nvimtree"
+
+      return vim.tbl_extend("force", core, custom)
+    end,
+  },
 }
 
 return plugins
