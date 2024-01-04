@@ -86,6 +86,12 @@ local plugins = {
       return vim.tbl_extend("force", core, custom)
     end,
   },
+
+  -- vim-test
+  {
+    "vim-test/vim-test",
+    cmd = { "TestNearest", "TestSuite", "TestClass", "TestFile", "TestLast", "TestVisit" },
+  },
 }
 
 return plugins

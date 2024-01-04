@@ -80,4 +80,11 @@ M.rest = {
   },
 }
 
+M.vimtest = {
+  n = {
+    ["<leader>rt"] = { "<cmd> TestNearest <CR>", "Run nearest test" },
+    ["<leader>rT"] = { "<cmd> TestFile <CR>", "Run test file" },
+  },
+}
+
 return M
