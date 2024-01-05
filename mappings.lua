@@ -37,6 +37,8 @@ M.general = {
       "Conform / LSP formating",
     },
     ["<leader>d"] = { [["_d]], "delete with void register" },
+    ["J"] = { ":m '>+1<CR>gv=gv", "Move line below" },
+    ["K"] = { ":m '<-2<CR>gv=gv", "Move line above" },
   },
 }
 
