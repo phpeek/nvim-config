@@ -110,6 +110,12 @@ local plugins = {
       require "custom.plugins.configs.accelerated-jk"
     end,
   },
+
+  -- vim-surround
+  {
+    "tpope/vim-surround",
+    event = "BufReadPost",
+  },
 }
 
 return plugins
