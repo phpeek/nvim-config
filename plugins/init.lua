@@ -101,6 +101,15 @@ local plugins = {
       require "custom.plugins.configs.better_escape"
     end,
   },
+
+  -- accelerated-jk
+  {
+    "rainbowhxch/accelerated-jk.nvim",
+    event = "BufWinEnter",
+    config = function()
+      require "custom.plugins.configs.accelerated-jk"
+    end,
+  },
 }
 
 return plugins
