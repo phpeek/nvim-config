@@ -92,6 +92,15 @@ local plugins = {
     "vim-test/vim-test",
     cmd = { "TestNearest", "TestSuite", "TestClass", "TestFile", "TestLast", "TestVisit" },
   },
+
+  -- better-escape
+  {
+    "max397574/better-escape.nvim",
+    event = { "InsertEnter" },
+    config = function()
+      require "custom.plugins.configs.better_escape"
+    end,
+  },
 }
 
 return plugins
