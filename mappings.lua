@@ -24,6 +24,7 @@ M.general = {
       "Conform / LSP formating",
     },
     ["<leader>d"] = { [["_d]], "delete with void register" },
+    [";"] = { ":", "Go command" },
   },
   v = {
     ["<leader>fm"] = {
