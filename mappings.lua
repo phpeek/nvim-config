@@ -63,6 +63,8 @@ M.telescope = {
     ["<leader>hs"] = { "<cmd> Telescope help_tags <CR>", "Search help" },
     ["<leader>fs"] = { "<cmd> Telescope lsp_document_symbols <CR>", "Find symbols" },
     ["<leader>fk"] = { "<cmd> Telescope keymaps <CR>", "Find keymap" },
+    ["<leader>fW"] = { "<cmd> Telescope grep_string <CR>", "Find word under cursor" },
+    ["<leader>fd"] = { "<cmd> Telescope diagnostics <CR>", "Find diagnostics" },
   },
 }
 
