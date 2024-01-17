@@ -13,6 +13,7 @@ local servers = {
   "helm_ls",
   "tsserver",
   "eslint",
+  "pyright",
 }
 
 for _, lsp in ipairs(servers) do

@@ -27,6 +27,9 @@ local options = {
     -- eslint lsp
     "eslint-lsp",
 
+    -- python lsp
+    "pyright",
+
     -- formatters
     "stylua",
     "goimports",
