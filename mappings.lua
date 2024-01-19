@@ -15,11 +15,7 @@ M.general = {
   n = {
     ["<leader>fm"] = {
       function()
-        require("conform").format {
-          lsp_fallback = true,
-          async = true,
-          timeout_ms = 500,
-        }
+        require("conform").format()
       end,
       "Conform / LSP formating",
     },
