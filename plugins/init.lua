@@ -1,3 +1,4 @@
+---@type NvPluginSpec[]
 local plugins = {
   -- vim learning
   {
@@ -35,7 +36,6 @@ local plugins = {
       return vim.tbl_deep_extend("force", core, custom)
     end,
   },
-
   -- lspconfig
   {
     "neovim/nvim-lspconfig",

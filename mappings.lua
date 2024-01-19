@@ -1,3 +1,4 @@
+---@type MappingsTable
 local M = {}
 
 M.disabled = {
@@ -20,22 +21,15 @@ M.general = {
       "Conform / LSP formating",
     },
     ["<leader>d"] = { [["_d]], "delete with void register" },
-    [";"] = { ":", "Go command" },
+    [";"] = { ":", "Enter command mode", opts = { nowait = true } },
+    ["<C-d>"] = { "<C-d>zz" },
+    ["<C-u>"] = { "<C-u>zz" },
   },
   v = {
-    ["<leader>fm"] = {
-      function()
-        require("conform").format {
-          lsp_fallback = true,
-          async = true,
-          timeout_ms = 500,
-        }
-      end,
-      "Conform / LSP formating",
-    },
     ["<leader>d"] = { [["_d]], "delete with void register" },
     ["J"] = { ":m '>+1<CR>gv=gv", "Move line below" },
     ["K"] = { ":m '<-2<CR>gv=gv", "Move line above" },
+    [">"] = { ">gv", "indenting" },
   },
 }
 
