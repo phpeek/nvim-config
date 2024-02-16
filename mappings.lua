@@ -21,7 +21,7 @@ M.general = {
       "Conform / LSP formating",
     },
     ["<leader>d"] = { [["_d]], "delete with void register" },
-    [";"] = { ":", "Enter command mode", opts = { nowait = true } },
+    -- [";"] = { ":", "Enter command mode", opts = { nowait = true } },
     ["<C-d>"] = { "<C-d>zz" },
     ["<C-u>"] = { "<C-u>zz" },
   },

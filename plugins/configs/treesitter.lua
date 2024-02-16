@@ -36,6 +36,16 @@ local options = {
 
     -- http
     "http",
+
+    -- markdown
+    "markdown",
+    "markdown_inline",
+
+    -- python
+    "python",
+
+    -- bash
+    "bash",
   },
 
   -- do not auto install parsers

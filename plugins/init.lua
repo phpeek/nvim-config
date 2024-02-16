@@ -15,27 +15,15 @@ local plugins = {
   -- treesitter
   {
     "nvim-treesitter/nvim-treesitter",
-    dependencies = {
-      "nvim-treesitter/nvim-treesitter-textobjects",
-    },
-    opts = function()
-      local base = require "plugins.configs.treesitter"
-      local overwrite = require "custom.plugins.configs.treesitter"
-
-      return vim.tbl_deep_extend("force", base, overwrite)
-    end,
+    opts = require "custom.plugins.configs.treesitter",
   },
 
   -- mason
   {
     "williamboman/mason.nvim",
-    opts = function()
-      local core = require "plugins.configs.mason"
-      local custom = require "custom.plugins.configs.mason"
-
-      return vim.tbl_deep_extend("force", core, custom)
-    end,
+    opts = require "custom.plugins.configs.mason",
   },
+
   -- lspconfig
   {
     "neovim/nvim-lspconfig",
@@ -58,12 +46,7 @@ local plugins = {
   --- telescope
   {
     "nvim-telescope/telescope.nvim",
-    opts = function()
-      local core = require "plugins.configs.telescope"
-      local custom = require "custom.plugins.configs.telescope"
-
-      return vim.tbl_deep_extend("force", core, custom)
-    end,
+    opts = require "custom.plugins.configs.telescope",
   },
 
   -- rest.nvim
@@ -79,12 +62,7 @@ local plugins = {
   -- nvim-tree
   {
     "nvim-tree/nvim-tree.lua",
-    opts = function()
-      local core = require "plugins.configs.nvimtree"
-      local custom = require "custom.plugins.configs.nvimtree"
-
-      return vim.tbl_extend("force", core, custom)
-    end,
+    opts = require "custom.plugins.configs.nvimtree",
   },
 
   -- vim-test
@@ -96,7 +74,7 @@ local plugins = {
   -- better-escape
   {
     "max397574/better-escape.nvim",
-    event = { "InsertEnter" },
+    event = "InsertEnter",
     config = function()
       require "custom.plugins.configs.better_escape"
     end,
@@ -115,6 +93,12 @@ local plugins = {
   {
     "tpope/vim-surround",
     event = "BufReadPost",
+  },
+
+  -- nvim-cmp
+  {
+    "hrsh7th/nvim-cmp",
+    opts = require "custom.plugins.configs.cmp",
   },
 }
 
