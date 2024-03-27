@@ -23,6 +23,7 @@ local options = {
     "python",
     "bash",
     "terraform",
+    "xml",
   },
 
   -- do not auto install parsers

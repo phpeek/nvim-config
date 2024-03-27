@@ -49,11 +49,16 @@ local plugins = {
     opts = require "custom.plugins.configs.telescope",
   },
 
-  -- rest.nvim
+  {
+    "vhyrro/luarocks.nvim",
+    priority = 1000,
+    config = true,
+  },
+
   {
     "rest-nvim/rest.nvim",
-    dependencies = { { "nvim-lua/plenary.nvim" } },
-    event = "VeryLazy",
+    ft = "http",
+    dependencies = { "luarocks.nvim" },
     config = function()
       require "custom.plugins.configs.rest-nvim"
     end,
