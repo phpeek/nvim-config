@@ -25,4 +25,3 @@ opt.incsearch = true
 
 -- highlight column at 80th character
 opt.colorcolumn = "80"
-
