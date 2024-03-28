@@ -14,6 +14,8 @@ local options = {
     go = { "gofmt", "goimports" },
 
     sh = { "shfmt" },
+
+    terraform = { "terraform_fmt" },
   },
 
   -- format_on_save = {

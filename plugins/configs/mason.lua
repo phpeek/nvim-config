@@ -35,6 +35,7 @@ local options = {
     "goimports",
     "prettier",
     "eslint_d",
+    "terraform-ls",
   },
 }
 

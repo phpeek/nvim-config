@@ -14,6 +14,7 @@ local servers = {
   "tsserver",
   "eslint",
   "pyright",
+  "terraformls",
 }
 
 for _, lsp in ipairs(servers) do
