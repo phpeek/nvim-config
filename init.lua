@@ -1,28 +1,39 @@
-local opt = vim.o
+vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
+vim.g.mapleader = " "
 
--- enable relative line numbers
-opt.relativenumber = true
+-- bootstrap lazy and all plugins
+local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 
--- do not wrap long lines
-opt.wrap = false
+if not vim.loop.fs_stat(lazypath) then
+  local repo = "https://github.com/folke/lazy.nvim.git"
+  vim.fn.system { "git", "clone", "--filter=blob:none", repo, "--branch=stable", lazypath }
+end
 
--- disable swap files
-opt.swapfile = false
+vim.opt.rtp:prepend(lazypath)
 
--- disable backup file
-opt.backup = false
+local lazy_config = require "configs.lazy"
 
--- keep 8 lines from top/bottom
-opt.scrolloff = 8
+-- load plugins
+require("lazy").setup({
+  {
+    "NvChad/NvChad",
+    lazy = false,
+    branch = "v2.5",
+    import = "nvchad.plugins",
+    config = function()
+      require "options"
+    end,
+  },
 
--- disable searched highlights
-opt.hlsearch = false
+  { import = "plugins" },
+}, lazy_config)
 
--- highlight incremental searc
-opt.incsearch = true
+-- load theme
+dofile(vim.g.base46_cache .. "defaults")
+dofile(vim.g.base46_cache .. "statusline")
 
--- highlight column at 80th character
-opt.colorcolumn = "80"
+require "nvchad.autocmds"
 
--- disable space in normal and visual mode
-vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
+vim.schedule(function()
+  require "mappings"
+end)
