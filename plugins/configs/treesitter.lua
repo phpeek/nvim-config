@@ -21,6 +21,7 @@ local options = {
     "markdown",
     "markdown_inline",
     "python",
+    "rust",
     "bash",
     "terraform",
     "xml",

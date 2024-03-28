@@ -15,6 +15,7 @@ local servers = {
   "eslint",
   "pyright",
   "terraformls",
+  "rust_analyzer",
 }
 
 for _, lsp in ipairs(servers) do

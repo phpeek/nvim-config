@@ -30,6 +30,9 @@ local options = {
     -- python lsp
     "pyright",
 
+    -- rust lsp
+    "rust-analyzer",
+
     -- formatters
     "stylua",
     "goimports",
