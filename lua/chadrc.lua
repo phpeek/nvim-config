@@ -17,10 +17,4 @@ M.ui = {
   },
 }
 
--- load plugins
--- M.plugins = "plugins.init"
-
--- load mappings
--- M.mappings = require "custom.mappings"
-
 return M
