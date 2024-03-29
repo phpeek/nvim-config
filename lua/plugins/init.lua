@@ -25,14 +25,15 @@ return {
 
   {
     'folke/neodev.nvim',
-    ft = 'lua',
     opts = require 'configs.neodev',
-    lazy = false,
   },
 
   -- lspconfig
   {
     'neovim/nvim-lspconfig',
+    dependencies = {
+      'folke/neodev.nvim'
+    },
     config = function()
       require('nvchad.configs.lspconfig').defaults()
       require 'configs.lspconfig'
