@@ -32,7 +32,7 @@ return {
   {
     'neovim/nvim-lspconfig',
     dependencies = {
-      'folke/neodev.nvim'
+      'folke/neodev.nvim',
     },
     config = function()
       require('nvchad.configs.lspconfig').defaults()
@@ -75,12 +75,6 @@ return {
     opts = require 'configs.nvimtree',
   },
 
-  -- vim-test
-  {
-    'vim-test/vim-test',
-    cmd = { 'TestNearest', 'TestSuite', 'TestClass', 'TestFile', 'TestLast', 'TestVisit' },
-  },
-
   -- better-escape
   {
     'max397574/better-escape.nvim',
@@ -109,5 +103,25 @@ return {
   {
     'hrsh7th/nvim-cmp',
     opts = require 'configs.cmp',
+  },
+
+  {
+    'nvim-neotest/neotest',
+    opts = function()
+      return require 'configs.neotest'
+    end,
+    dependencies = {
+      'nvim-neotest/nvim-nio',
+      'nvim-lua/plenary.nvim',
+      'antoinemadec/FixCursorHold.nvim',
+      'nvim-treesitter/nvim-treesitter',
+
+      -- adapters
+      'nvim-neotest/neotest-plenary',
+      'nvim-neotest/neotest-vim-test',
+      'nvim-neotest/neotest-jest',
+      'nvim-neotest/neotest-python',
+      'nvim-neotest/neotest-go',
+    },
   },
 }
