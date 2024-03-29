@@ -36,8 +36,12 @@ map('n', '<leader>fW', '<cmd> Telescope grep_string <CR>', { desc = 'Telescope F
 map('n', '<leader>fd', '<cmd> Telescope diagnostics <CR>', { desc = 'Telescope Find diagnostics' })
 
 -- neotest
-map('n', '<leader>rt', function() require('neotest').run.run() end, { desc = 'Neotest Run nearest test' })
-map('n', '<leader>rT', function() require('neotest').run.run(vim.fn.expand("%")) end, { desc = 'Neotest Run test file' })
+map('n', '<leader>rt', function()
+  require('neotest').run.run()
+end, { desc = 'Neotest Run nearest test' })
+map('n', '<leader>rT', function()
+  require('neotest').run.run(vim.fn.expand '%')
+end, { desc = 'Neotest Run test file' })
 
 -- accelerated_jk
 map('n', 'j', '<Plug>(accelerated_jk_gj)')

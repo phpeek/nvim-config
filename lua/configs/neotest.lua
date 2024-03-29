@@ -1,6 +1,6 @@
 local options = {
   adapters = {
-   require 'neotest-python' {
+    require 'neotest-python' {
       dap = { justMyCode = false },
     },
     require 'neotest-plenary',
