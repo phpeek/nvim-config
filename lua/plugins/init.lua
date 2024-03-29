@@ -2,51 +2,51 @@
 return {
   -- vim learning
   {
-    "ThePrimeagen/vim-be-good",
-    cmd = "VimBeGood",
+    'ThePrimeagen/vim-be-good',
+    cmd = 'VimBeGood',
   },
 
   -- git intergration
   {
-    "tpope/vim-fugitive",
-    cmd = "Git",
+    'tpope/vim-fugitive',
+    cmd = 'Git',
   },
 
   -- treesitter
   {
-    "nvim-treesitter/nvim-treesitter",
-    opts = require "configs.treesitter",
+    'nvim-treesitter/nvim-treesitter',
+    opts = require 'configs.treesitter',
   },
 
   -- mason
   {
-    "williamboman/mason.nvim",
-    opts = require "configs.mason",
+    'williamboman/mason.nvim',
+    opts = require 'configs.mason',
   },
 
   -- lspconfig
   {
-    "neovim/nvim-lspconfig",
+    'neovim/nvim-lspconfig',
     config = function()
-      require("nvchad.configs.lspconfig").defaults()
-      require "configs.lspconfig"
+      require('nvchad.configs.lspconfig').defaults()
+      require 'configs.lspconfig'
     end,
   },
 
   --- conform
   {
-    "stevearc/conform.nvim",
-    event = "BufWritePre",
-    cmd = { "ConformInfo" },
+    'stevearc/conform.nvim',
+    event = 'BufWritePre',
+    cmd = { 'ConformInfo' },
     config = function()
-      require "configs.conform"
+      require 'configs.conform'
     end,
   },
 
   --- telescope
   {
-    "nvim-telescope/telescope.nvim",
-    opts = require "configs.telescope",
+    'nvim-telescope/telescope.nvim',
+    opts = require 'configs.telescope',
   },
 
   -- {
@@ -66,43 +66,43 @@ return {
 
   -- nvim-tree
   {
-    "nvim-tree/nvim-tree.lua",
-    opts = require "configs.nvimtree",
+    'nvim-tree/nvim-tree.lua',
+    opts = require 'configs.nvimtree',
   },
 
   -- vim-test
   {
-    "vim-test/vim-test",
-    cmd = { "TestNearest", "TestSuite", "TestClass", "TestFile", "TestLast", "TestVisit" },
+    'vim-test/vim-test',
+    cmd = { 'TestNearest', 'TestSuite', 'TestClass', 'TestFile', 'TestLast', 'TestVisit' },
   },
 
   -- better-escape
   {
-    "max397574/better-escape.nvim",
-    event = "InsertEnter",
+    'max397574/better-escape.nvim',
+    event = 'InsertEnter',
     config = function()
-      require "configs.better_escape"
+      require 'configs.better_escape'
     end,
   },
 
   -- accelerated-jk
   {
-    "rainbowhxch/accelerated-jk.nvim",
-    event = "BufWinEnter",
+    'rainbowhxch/accelerated-jk.nvim',
+    event = 'BufWinEnter',
     config = function()
-      require "configs.accelerated-jk"
+      require 'configs.accelerated-jk'
     end,
   },
 
   -- vim-surround
   {
-    "tpope/vim-surround",
-    event = "BufReadPost",
+    'tpope/vim-surround',
+    event = 'BufReadPost',
   },
 
   -- nvim-cmp
   {
-    "hrsh7th/nvim-cmp",
-    opts = require "configs.cmp",
+    'hrsh7th/nvim-cmp',
+    opts = require 'configs.cmp',
   },
 }

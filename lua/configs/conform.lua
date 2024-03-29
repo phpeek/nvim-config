@@ -2,22 +2,22 @@ local options = {
   lsp_fallback = true,
 
   formatters_by_ft = {
-    lua = { "stylua" },
+    lua = { 'stylua' },
 
-    javascript = { "prettier" },
-    typescript = { "prettier" },
-    css = { "prettier" },
-    html = { "prettier" },
-    javascriptreact = { "prettier" },
-    typescriptreact = { "prettier" },
+    javascript = { 'prettier' },
+    typescript = { 'prettier' },
+    css = { 'prettier' },
+    html = { 'prettier' },
+    javascriptreact = { 'prettier' },
+    typescriptreact = { 'prettier' },
 
-    go = { "gofmt", "goimports" },
+    go = { 'gofmt', 'goimports' },
 
-    sh = { "shfmt" },
+    sh = { 'shfmt' },
 
-    terraform = { "terraform_fmt" },
+    terraform = { 'terraform_fmt' },
 
-    rust = { "rustfmt" },
+    rust = { 'rustfmt' },
   },
 
   -- format_on_save = {
@@ -27,4 +27,4 @@ local options = {
   -- },
 }
 
-require("conform").setup(options)
+require('conform').setup(options)

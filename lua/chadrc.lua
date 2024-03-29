@@ -3,8 +3,8 @@ local M = {}
 
 -- set theme and ts highlights
 M.ui = {
-  theme = "tokyonight",
-  theme_toggle = { "tokyonight", "tokyodark" },
+  theme = 'tokyonight',
+  theme_toggle = { 'tokyonight', 'tokyodark' },
 
   hl_override = {
     Comment = {
@@ -12,7 +12,7 @@ M.ui = {
     },
   },
   hl_add = {
-    NvimTreeOpenedFolderName = { fg = "teal", bold = true },
+    NvimTreeOpenedFolderName = { fg = 'teal', bold = true },
   },
 }
 

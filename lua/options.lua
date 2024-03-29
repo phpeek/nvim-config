@@ -1,4 +1,4 @@
-require "nvchad.options"
+require 'nvchad.options'
 
 local opt = vim.o
 
@@ -24,4 +24,4 @@ opt.hlsearch = false
 opt.incsearch = true
 
 -- highlight column at 80th character
-opt.colorcolumn = "80"
+opt.colorcolumn = '80'

@@ -1,21 +1,21 @@
-local on_attach = require("nvchad.configs.lspconfig").on_attach
-local on_init = require("nvchad.configs.lspconfig").on_init
-local capabilities = require("nvchad.configs.lspconfig").capabilities
+local on_attach = require('nvchad.configs.lspconfig').on_attach
+local on_init = require('nvchad.configs.lspconfig').on_init
+local capabilities = require('nvchad.configs.lspconfig').capabilities
 
-local lspconfig = require "lspconfig"
+local lspconfig = require 'lspconfig'
 
 local servers = {
-  "dockerls",
-  "cssls",
-  "gopls",
-  "jsonls",
-  "yamlls",
-  "helm_ls",
-  "tsserver",
-  "eslint",
-  "pyright",
-  "terraformls",
-  "rust_analyzer",
+  'dockerls',
+  'cssls',
+  'gopls',
+  'jsonls',
+  'yamlls',
+  'helm_ls',
+  'tsserver',
+  'eslint',
+  'pyright',
+  'terraformls',
+  'rust_analyzer',
 }
 
 -- lsps with default config

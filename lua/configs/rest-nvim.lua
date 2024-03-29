@@ -1,13 +1,13 @@
 local options = {
-  client = "curl",
-  env_file = ".env",
-  env_pattern = "\\.env$",
-  env_edit_command = "tabedit",
+  client = 'curl',
+  env_file = '.env',
+  env_pattern = '\\.env$',
+  env_edit_command = 'tabedit',
   encode_url = true,
   skip_ssl_verification = false,
   custom_dynamic_variables = {},
   logs = {
-    level = "info",
+    level = 'info',
     save = true,
   },
   result = {
@@ -28,34 +28,34 @@ local options = {
         enable = true,
         ---@see https://curl.se/libcurl/c/curl_easy_getinfo.html
         stats = {
-          { "total_time", title = "Time taken:" },
-          { "size_download_t", title = "Download size:" },
+          { 'total_time', title = 'Time taken:' },
+          { 'size_download_t', title = 'Download size:' },
         },
       },
       formatters = {
-        json = "jq",
+        json = 'jq',
         html = function(body)
-          if vim.fn.executable "tidy" == 0 then
-            return body, { found = false, name = "tidy" }
+          if vim.fn.executable 'tidy' == 0 then
+            return body, { found = false, name = 'tidy' }
           end
           local fmt_body = vim.fn
             .system({
-              "tidy",
-              "-i",
-              "-q",
-              "--tidy-mark",
-              "no",
-              "--show-body-only",
-              "auto",
-              "--show-errors",
-              "0",
-              "--show-warnings",
-              "0",
-              "-",
+              'tidy',
+              '-i',
+              '-q',
+              '--tidy-mark',
+              'no',
+              '--show-body-only',
+              'auto',
+              '--show-errors',
+              '0',
+              '--show-warnings',
+              '0',
+              '-',
             }, body)
-            :gsub("\n$", "")
+            :gsub('\n$', '')
 
-          return fmt_body, { found = true, name = "tidy" }
+          return fmt_body, { found = true, name = 'tidy' }
         end,
       },
     },

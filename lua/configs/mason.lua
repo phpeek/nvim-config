@@ -1,44 +1,44 @@
 local options = {
   ensure_installed = {
     -- lua
-    "lua-language-server",
+    'lua-language-server',
 
     -- go
-    "gopls",
+    'gopls',
 
     -- docker
-    "dockerfile-language-server",
+    'dockerfile-language-server',
 
     -- css
-    "css-lsp",
+    'css-lsp',
 
     -- json
-    "json-lsp",
+    'json-lsp',
 
     -- yaml
-    "yaml-language-server",
+    'yaml-language-server',
 
     -- typescript
-    "typescript-language-server",
+    'typescript-language-server',
 
     -- helm
-    "helm-ls",
+    'helm-ls',
 
     -- eslint lsp
-    "eslint-lsp",
+    'eslint-lsp',
 
     -- python lsp
-    "pyright",
+    'pyright',
 
     -- rust lsp
-    "rust-analyzer",
+    'rust-analyzer',
 
     -- formatters
-    "stylua",
-    "goimports",
-    "prettier",
-    "eslint_d",
-    "terraform-ls",
+    'stylua',
+    'goimports',
+    'prettier',
+    'eslint_d',
+    'terraform-ls',
   },
 }
 
