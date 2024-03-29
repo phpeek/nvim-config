@@ -19,12 +19,6 @@ local options = {
 
     rust = { 'rustfmt' },
   },
-
-  -- format_on_save = {
-  --   lsp_fallback = true,
-  --   async = false,
-  --   timeout_ms = 500,
-  -- },
 }
 
 require('conform').setup(options)
