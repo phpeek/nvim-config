@@ -1,7 +1,10 @@
 local options = {
   git = {
     enable = true,
-    ignore = false,
+  },
+
+  filters = {
+    git_ignored = false,
   },
 
   renderer = {
