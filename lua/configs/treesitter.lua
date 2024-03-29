@@ -1,8 +1,5 @@
 local options = {
   ensure_installed = {
-    'lua',
-    'vim',
-    'vimdoc',
     'go',
     'gomod',
     'gosum',
