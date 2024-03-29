@@ -23,6 +23,13 @@ return {
     opts = require 'configs.mason',
   },
 
+  {
+    'folke/neodev.nvim',
+    ft = 'lua',
+    opts = require 'configs.neodev',
+    lazy = false,
+  },
+
   -- lspconfig
   {
     'neovim/nvim-lspconfig',
