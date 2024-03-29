@@ -19,7 +19,7 @@ map('n', '<C-u>', '<C-u>zz', { desc = 'Move up and center cursor' })
 map('v', 'J', ":m '>+1<CR>gv=gv", { desc = 'Move line downwards' })
 map('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move line upwards' })
 map('v', '>', '>gv', { desc = 'Move indent line' })
-map({ 'n', 'v' }, '<leader>d', '[["_d]]', { desc = 'Delete with void register' })
+map({ 'n', 'v' }, '<leader>d', [["_d]], { desc = 'Delete with void register' })
 
 -- lsp
 map('n', '<leader>rn', vim.lsp.buf.rename, { desc = 'Lsp rename' })
