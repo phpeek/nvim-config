@@ -8,6 +8,7 @@ local options = {
   },
 
   renderer = {
+    root_folder_label = ':~:s?$?/..?',
     group_empty = true,
     icons = {
       show = {
