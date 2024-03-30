@@ -23,17 +23,9 @@ return {
     opts = require 'configs.mason',
   },
 
-  {
-    'folke/neodev.nvim',
-    opts = require 'configs.neodev',
-  },
-
   -- lspconfig
   {
     'neovim/nvim-lspconfig',
-    dependencies = {
-      'folke/neodev.nvim',
-    },
     config = function()
       require('nvchad.configs.lspconfig').defaults()
       require 'configs.lspconfig'
