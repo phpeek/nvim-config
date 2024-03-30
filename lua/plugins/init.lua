@@ -1,29 +1,24 @@
 return {
-  -- vim learning
   {
     'ThePrimeagen/vim-be-good',
     cmd = 'VimBeGood',
   },
 
-  -- git intergration
   {
     'tpope/vim-fugitive',
     cmd = 'Git',
   },
 
-  -- treesitter
   {
     'nvim-treesitter/nvim-treesitter',
     opts = require 'configs.treesitter',
   },
 
-  -- mason
   {
     'williamboman/mason.nvim',
     opts = require 'configs.mason',
   },
 
-  -- lspconfig
   {
     'neovim/nvim-lspconfig',
     config = function()
@@ -32,7 +27,6 @@ return {
     end,
   },
 
-  --- conform
   {
     'stevearc/conform.nvim',
     event = 'BufWritePre',
@@ -40,7 +34,6 @@ return {
     opts = require 'configs.conform',
   },
 
-  --- telescope
   {
     'nvim-telescope/telescope.nvim',
     opts = require 'configs.telescope',
@@ -61,13 +54,11 @@ return {
   --   end,
   -- },
 
-  -- nvim-tree
   {
     'nvim-tree/nvim-tree.lua',
     opts = require 'configs.nvimtree',
   },
 
-  -- better-escape
   {
     'max397574/better-escape.nvim',
     event = 'InsertEnter',
@@ -76,7 +67,6 @@ return {
     end,
   },
 
-  -- accelerated-jk
   {
     'rainbowhxch/accelerated-jk.nvim',
     event = 'BufWinEnter',
@@ -85,13 +75,11 @@ return {
     end,
   },
 
-  -- vim-surround
   {
     'tpope/vim-surround',
     event = 'BufReadPost',
   },
 
-  -- nvim-cmp
   {
     'hrsh7th/nvim-cmp',
     opts = require 'configs.cmp',
