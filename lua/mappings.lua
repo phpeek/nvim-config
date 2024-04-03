@@ -25,12 +25,8 @@ map({ 'n', 'v' }, '<leader>d', [["_d]], { desc = 'Delete with void register' })
 map('n', '<leader>rn', vim.lsp.buf.rename, { desc = 'Lsp rename' })
 
 -- telescope
-map('n', 'gd', '<cmd> Telescope lsp_definitions <CR>', { desc = 'Telescope LSP definitions' })
-map('n', 'gr', '<cmd> Telescope lsp_references <CR>', { desc = 'Telescope LSP references' })
-map('n', 'gi', '<cmd> Telescope lsp_implementations <CR>', { desc = 'Telescope LSP implementations' })
 map('n', '<C-p>', '<cmd> Telescope git_files <CR>', { desc = 'Telescope Find project files' })
 map('n', '<leader>hs', '<cmd> Telescope help_tags <CR>', { desc = 'Telescope Search help' })
-map('n', '<leader>fs', '<cmd> Telescope lsp_document_symbols <CR>', { desc = 'Telescope Find symbols' })
 map('n', '<leader>fk', '<cmd> Telescope keymaps <CR>', { desc = 'Telescope Find keymaps' })
 map('n', '<leader>fW', '<cmd> Telescope grep_string <CR>', { desc = 'Telescope Find word under cursor' })
 map('n', '<leader>fd', '<cmd> Telescope diagnostics <CR>', { desc = 'Telescope Find diagnostics' })
