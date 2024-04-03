@@ -1,4 +1,5 @@
 local options = {
+
   adapters = {
     require 'neotest-python' {
       dap = { justMyCode = false },
@@ -9,6 +10,10 @@ local options = {
     },
     require 'neotest-jest',
     require 'neotest-go',
+  },
+
+  output = {
+    open_on_run = true,
   },
 }
 
