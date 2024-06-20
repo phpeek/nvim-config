@@ -28,4 +28,6 @@ return {
   { import = "astrocommunity.programming-language-support.rest-nvim" },
 
   { import = "astrocommunity.test.neotest" },
+
+  { import = "astrocommunity.motion.mini-move" },
 }

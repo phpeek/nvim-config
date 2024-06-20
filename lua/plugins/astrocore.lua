@@ -66,6 +66,9 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
+
+        ["<C-u>"] = "<C-u>zz",
+        ["<C-d>"] = "<C-d>zz",
       },
     },
   },
