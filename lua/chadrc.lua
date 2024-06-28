@@ -6,7 +6,7 @@ local M = {}
 
 -- set theme and ts highlights
 M.ui = {
-  theme = 'tokyonight',
+  theme = 'catppuccin',
 
   hl_override = {
     Comment = { italic = true },
