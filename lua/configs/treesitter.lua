@@ -1,28 +1,57 @@
 local options = {
   ensure_installed = {
+    -- go
     'go',
     'gomod',
     'gosum',
     'gowork',
+
+    -- docker
     'dockerfile',
+
+    -- make
     'make',
+
+    -- web
     'html',
     'css',
     'javascript',
     'typescript',
     'tsx',
+
+    -- graphql
     'graphql',
+
+    -- json
     'json',
+
+    -- yaml
     'yaml',
+
+    -- not sure if needed
     'http',
+
+    -- markdown
     'markdown',
     'markdown_inline',
+
+    -- python
     'python',
+
+    -- rust
     'rust',
+
+    -- shell
     'bash',
+
+    -- terraform
     'terraform',
+
+    -- xml
     'xml',
-    'sql'
+
+    -- sql
+    'sql',
   },
 
   -- do not auto install parsers
