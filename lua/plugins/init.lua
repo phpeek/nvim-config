@@ -39,21 +39,6 @@ return {
     opts = require 'configs.telescope',
   },
 
-  -- {
-  --   "vhyrro/luarocks.nvim",
-  --   priority = 1000,
-  --   config = true,
-  -- },
-
-  -- {
-  --   "rest-nvim/rest.nvim",
-  --   ft = "http",
-  --   dependencies = { "luarocks.nvim" },
-  --   config = function()
-  --     require "configs.rest-nvim"
-  --   end,
-  -- },
-
   {
     'nvim-tree/nvim-tree.lua',
     opts = require 'configs.nvimtree',
