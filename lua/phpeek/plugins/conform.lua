@@ -26,12 +26,22 @@ return {
     end,
     formatters_by_ft = {
       lua = { 'stylua' },
+      go = { 'goimports', 'gofumpt' },
+      sh = { 'shfmt' },
+      terraform = { 'terraform_fmt' },
+      rust = { 'rustfmt' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
       --
       -- You can use a sub-list to tell conform to run *until* a formatter
       -- is found.
       -- javascript = { { "prettierd", "prettier" } },
+      javascript = { 'prettierd', 'prettier' },
+      typescript = { 'prettierd', 'prettier' },
+      css = { 'prettierd', 'prettier' },
+      html = { 'prettierd', 'prettier' },
+      javascriptreact = { 'prettierd', 'prettier' },
+      typescriptrecct = { 'prettierd', 'prettier' },
     },
   },
 }
