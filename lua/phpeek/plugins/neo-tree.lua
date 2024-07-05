@@ -7,7 +7,7 @@ return {
     'MunifTanjim/nui.nvim',
     -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
   },
-  cmd = 'Neotree',
+  lazy = false,
   keys = {
     { '\\', ':Neotree reveal<CR>', { desc = 'NeoTree reveal' } },
   },
@@ -18,6 +18,7 @@ return {
           ['\\'] = 'close_window',
         },
       },
+      hijack_netrw_behavior = 'open_default',
     },
   },
 }
