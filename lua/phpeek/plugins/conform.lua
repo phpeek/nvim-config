@@ -41,7 +41,7 @@ return {
       css = { 'prettierd' },
       html = { 'prettierd' },
       javascriptreact = { 'prettierd' },
-      typescriptrecct = { 'prettierd' },
+      typescriptreact = { 'prettierd' },
     },
   },
 }
