@@ -36,3 +36,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- quick escape
 vim.keymap.set('i', 'jk', '<esc>', { nowait = true })
+
+-- easy comment
+vim.keymap.set('n', '<leader>/', 'gcc', { remap = true })
+vim.keymap.set('v', '<leader>/', 'gcc', { remap = true })
