@@ -40,3 +40,7 @@ vim.keymap.set('i', 'jk', '<esc>', { nowait = true })
 -- easy comment
 vim.keymap.set('n', '<leader>/', 'gcc', { remap = true })
 vim.keymap.set('v', '<leader>/', 'gcc', { remap = true })
+
+-- sane jumping
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
