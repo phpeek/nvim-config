@@ -28,8 +28,6 @@ return { -- Fuzzy Finder (files, lsp, etc)
     -- many different aspects of Neovim, your workspace, LSP, and more!
     --
     -- The easiest way to use Telescope, is to start by doing something like:
-    --  :Telescope help_tags
-    --
     -- After running this command, a window will open up and you're able to
     -- type in the prompt window. You'll see a list of `help_tags` options and
     -- a corresponding preview of the help.
@@ -69,12 +67,13 @@ return { -- Fuzzy Finder (files, lsp, etc)
 
     -- See `:help telescope.builtin`
     local builtin = require 'telescope.builtin'
-    vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[s]earch [h]elp' })
-    vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[s]earch [k]eymaps' })
-    vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[s]earch [f]iles' })
-    vim.keymap.set('n', '<leader>sw', builtin.live_grep, { desc = '[s]earch [w]ord (grep)' })
-    vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[s]earch [d]iagnostics' })
+    vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = '[s]earch [h]elp' })
+    vim.keymap.set('n', '<leader>fk', builtin.keymaps, { desc = '[s]earch [k]eymaps' })
+    vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = '[s]earch [f]iles' })
+    vim.keymap.set('n', '<leader>fw', builtin.live_grep, { desc = '[s]earch [w]ord (grep)' })
+    vim.keymap.set('n', '<leader>fd', builtin.diagnostics, { desc = '[s]earch [d]iagnostics' })
     vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = 'search opened buffers' })
-    vim.keymap.set('n', '<leader>s.', builtin.current_buffer_fuzzy_find, { desc = '[s]earch current [b]uffer' })
+    vim.keymap.set('n', '<leader>f.', builtin.current_buffer_fuzzy_find, { desc = '[s]earch current [b]uffer' })
+    vim.keymap.set('n', '<leader>fs', builtin.lsp_document_symbols, { desc = '[f]ind document [s]ymbold' })
   end,
 }
