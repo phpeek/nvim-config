@@ -43,3 +43,7 @@ vim.keymap.set('v', '<leader>/', 'gcc', { remap = true })
 -- sane jumping
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
+
+-- Jump to start/end of line using the home row keys-- Jump to start and end of line using the home row keys
+vim.keymap.set('', 'H', '^')
+vim.keymap.set('', 'L', '$')
