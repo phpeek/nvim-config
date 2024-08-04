@@ -19,7 +19,7 @@ return {
           ['\\'] = 'close_window',
         },
       },
-      hijack_netrw_behavior = 'open_default',
+      hijack_netrw_behavior = 'open_current',
     },
   },
 }
