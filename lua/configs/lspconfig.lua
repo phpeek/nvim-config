@@ -35,6 +35,7 @@ local servers = {
   'pyright',
   'terraformls',
   'rust_analyzer',
+  'bashls',
 }
 
 -- lsps with default config
